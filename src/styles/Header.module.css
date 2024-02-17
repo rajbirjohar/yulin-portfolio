@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--gutter-xl);
+  width: 100%;
+  max-width: var(--main-width);
+  padding: var(--gutter-xxl) var(--gutter-md);
+  margin: 0 auto;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gutter-md);
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gutter-xl);
+}
+
+.link {
+  font-weight: 450;
+  text-transform: uppercase;
+  font-size: var(--font-sm);
+  color: var(--black);
+}

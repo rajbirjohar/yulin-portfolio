@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --gray-0: #fafafa;
+  --gray-1: #f4f4f5;
+  --gray-2: #e4e4e7;
+  --gray-3: #d4d4d8;
+  --gray-4: #a1a1aa;
+  --gray-5: #71717a;
+  --gray-6: #52525b;
+  --gray-7: #3f3f46;
+  --gray-8: #27272a;
+  --gray-9: #18181b;
+  --gray-10: #09090b;
+
+  --red-0: #fef2f2;
+  --red-1: #fee2e2;
+  --red-2: #fecaca;
+  --red-3: #fca5a5;
+  --red-4: #f87171;
+  --red-5: #ef4444;
+  --red-6: #dc2626;
+  --red-7: #b91c1c;
+  --red-8: #991b1b;
+  --red-9: #7f1d1d;
+  --red-10: #450a0a;
+
+  /* Spacing */
+  --gutter-xxs: 2px;
+  --gutter-xs: 4px;
+  --gutter-sm: 8px;
+  --gutter: 16px;
+  --gutter-md: 24px;
+  --gutter-lg: 32px;
+  --gutter-xl: 48px;
+  --gutter-xxl: 64px;
+
+  --main-width: 1200px;
+  --main-height: 100svh;
+  --header-height: 60px;
+
+  /* Animations */
+  --transition-fast: 200ms cubic-bezier(0.25, 1, 0.5, 1);
+  --transition: 400ms cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-slow: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Fonts */
+  --font-sans: "Inter", sans-serif;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-md: 1.1rem;
+  --font-lg: 1.2rem;
+  --font-xl: 1.3rem;
+  --font-xxl: 1.4rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-sans);
+  font-size: var(--font-base);
+  color: var(--gray-8);
+  background-color: var(--white);
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  color: var(--red-6);
+  text-decoration: none;
+}
